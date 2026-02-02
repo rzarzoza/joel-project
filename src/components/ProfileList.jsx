@@ -3,7 +3,7 @@ import ProfileCard from './ProfileCard'
 export default function ProfileList({ profiles, loading, error, page, pageSize, onPageChange }) {
   if (loading) return <div className="muted">Loading profiles…</div>
   if (error) return <div className="muted">Error: {error}</div>
-  if (!profiles.length) return <div className="muted">No profiles yet. Create some or import a JSON.</div>
+  if (!profiles.length) return <div className="muted">No profiles yet.</div>
 
   const totalPages = Math.max(1, Math.ceil(profiles.length / pageSize))
   const currentPage = Math.min(page, totalPages)
