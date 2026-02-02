@@ -1,14 +1,14 @@
 :root {
-  --bg: #f3f8f3;
+  --bg: #f4f6fb;
   --panel: #ffffff;
-  --muted: #59665a;
-  --text: #0e1b0f;
-  --primary: #14884b;
-  --primary-strong: #0f6e3d;
-  --accent: #39c073;
-  --border: #dfe9e1;
-  --chip: #e7f5eb;
-  --shadow: 0 20px 60px rgba(8, 28, 16, 0.08);
+  --muted: #606b86;
+  --text: #0f1a2e;
+  --primary: #1f6feb;
+  --primary-strong: #1247b7;
+  --accent: #5aa4ff;
+  --border: #dbe3f5;
+  --chip: #e8f1ff;
+  --shadow: 0 20px 60px rgba(12, 30, 68, 0.08);
   --radius: 18px;
   font-family: 'Sora', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   background: var(--bg);
@@ -25,9 +25,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 15% 20%, rgba(57, 192, 115, 0.12), transparent 32%),
-    radial-gradient(circle at 80% 10%, rgba(20, 136, 75, 0.12), transparent 28%),
-    radial-gradient(circle at 60% 75%, rgba(15, 110, 61, 0.08), transparent 36%),
+    radial-gradient(circle at 15% 20%, rgba(90, 164, 255, 0.14), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(31, 111, 235, 0.12), transparent 28%),
+    radial-gradient(circle at 60% 75%, rgba(18, 71, 183, 0.08), transparent 36%),
     var(--bg);
 }
 
@@ -51,8 +51,8 @@ a {
   overflow: hidden;
   border-radius: 24px;
   padding: 32px;
-  background: linear-gradient(135deg, #0d3d24, #0f5a32 55%, #14884b);
-  color: #e9f8ef;
+  background: linear-gradient(135deg, #0b1f47, #1247b7 55%, #1f6feb);
+  color: #e7efff;
   box-shadow: var(--shadow);
   border: 1px solid rgba(255, 255, 255, 0.08);
   display: grid;
@@ -66,7 +66,7 @@ a {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 65% 30%, rgba(255, 255, 255, 0.22), transparent 35%),
+    radial-gradient(circle at 65% 30%, rgba(255, 255, 255, 0.18), transparent 35%),
     linear-gradient(120deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px);
   background-size: 100% 100%, 38px 38px;
   opacity: 0.4;
@@ -88,7 +88,7 @@ a {
 .subhead {
   margin: 0;
   max-width: 520px;
-  color: #cfe9d6;
+  color: #cfe0ff;
   font-weight: 500;
 }
 
@@ -106,13 +106,13 @@ a {
   font-size: 11px;
   margin: 0;
   font-weight: 800;
-  color: #c0e6c8;
+  color: #c5d7ff;
 }
 
 .eyebrow.small {
   font-size: 10px;
   letter-spacing: 0.08em;
-  color: #7a9c7e;
+  color: #7e8fb6;
 }
 
 .layout {
@@ -178,7 +178,7 @@ input,
 select,
 textarea {
   width: 100%;
-  background: #f9fbff;
+  background: #f7f9ff;
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 12px 12px;
@@ -192,7 +192,7 @@ input:focus,
 select:focus,
 textarea:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(20, 136, 75, 0.2);
+  box-shadow: 0 0 0 3px rgba(31, 111, 235, 0.2);
   background: #ffffff;
 }
 
@@ -223,14 +223,14 @@ textarea {
 .btn.primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
   color: #f7fff9;
-  border-color: rgba(20, 136, 75, 0.12);
-  box-shadow: 0 12px 28px rgba(20, 136, 75, 0.24);
+  border-color: rgba(31, 111, 235, 0.12);
+  box-shadow: 0 12px 28px rgba(18, 71, 183, 0.24);
 }
 
 .btn.secondary {
-  background: linear-gradient(135deg, #c0e6c8, #9fd4a4);
-  color: #0f2c16;
-  border-color: rgba(159, 212, 164, 0.6);
+  background: linear-gradient(135deg, #c8e0ff, #a8c8ff);
+  color: #0f1f3a;
+  border-color: rgba(168, 200, 255, 0.6);
   box-shadow: none;
 }
 
@@ -274,8 +274,8 @@ textarea {
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 16px;
-  background: linear-gradient(160deg, #ffffff, #f4fbf6);
-  box-shadow: 0 14px 26px rgba(11, 41, 23, 0.09);
+  background: linear-gradient(160deg, #ffffff, #f4f7ff);
+  box-shadow: 0 14px 26px rgba(12, 30, 68, 0.09);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -287,7 +287,7 @@ textarea {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 110% -10%, rgba(20, 136, 75, 0.12), transparent 45%);
+  background: radial-gradient(circle at 110% -10%, rgba(31, 111, 235, 0.12), transparent 45%);
   pointer-events: none;
 }
 
@@ -315,13 +315,13 @@ textarea {
   border-radius: 999px;
   font-weight: 700;
   font-size: 12px;
-  background: #ddefe2;
-  color: #0f2316;
+  background: #e3edff;
+  color: #0f234d;
 }
 
 .pill.soft {
-  background: #ecf9f0;
-  color: #175934;
+  background: #f0f6ff;
+  color: #1f3f80;
 }
 
 .chip {
@@ -329,8 +329,8 @@ textarea {
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
-  color: #1f3b24;
-  border: 1px solid #d5e8d9;
+  color: #22365b;
+  border: 1px solid #d2dff7;
 }
 
 .chips {
